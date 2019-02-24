@@ -1,0 +1,785 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 9,
+        "name": "i am on the home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 39025899775,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTheBrowser()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "select product randomly",
+        "description": "",
+        "id": ";select-product-randomly;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1599345653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 905728277,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am on the home page",
+            "match": {
+              "location": "SortByPriceStepdefs.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3333424582,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for the product \"shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shirt",
+                  "offset": 26
+                }
+              ],
+              "location": "SortByPriceStepdefs.iSearchForTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 224647340,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should view all the relevant products",
+            "match": {
+              "location": "SortByPriceStepdefs.iShouldViewAllTheRelevantProducts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1553369531,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "i will select a product randomly",
+            "match": {
+              "location": "AddToBagStepdefs.iWillSelectAProductRandomly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27563,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the product should be added to shopping bag",
+            "match": {
+              "location": "AddToBagStepdefs.theProductShouldBeAddedToShoppingBag()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@addtobag"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "\r\nAs a end user\r\ni search for a product\r\nand i want to select a product randomly\r\nthe product should be adde to basket",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "java/resources/addToMyBag.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@addtobag"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "i am on the home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10478088611,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTheBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "login with valid details",
+        "description": "",
+        "id": ";login-with-valid-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 805709399,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1244588135,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i am on the login page",
+            "match": {
+              "location": "LogInStepdefs.iAmOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 295263249,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter my email id \"ballachakri@yahoo.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ballachakri@yahoo.com",
+                  "offset": 21
+                }
+              ],
+              "location": "LogInStepdefs.i_enter_my_email_id(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1747059401,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter my password \"Khalifa123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Khalifa123",
+                  "offset": 21
+                }
+              ],
+              "location": "LogInStepdefs.i_enter_my_password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44294755,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be able navigate to registered user page",
+            "match": {
+              "location": "LogInStepdefs.i_should_be_able_navigate_to_registered_user_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "As a end user\r\ni want to log in with my details\r\nSo that i can do see all my details",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "java/resources/logIn.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@login"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8206123982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTheBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Register",
+        "description": "",
+        "id": ";register",
+        "after": [
+          {
+            "result": {
+              "duration": 836776744,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2020584948,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the registration page",
+            "match": {
+              "location": "RegisterStepdefs.i_am_on_the_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1719731238,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter all the required fields",
+            "match": {
+              "location": "RegisterStepdefs.i_enter_all_the_required_fields(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "tile",
+                  "firsName",
+                  "lastName",
+                  "tel_number",
+                  "password",
+                  "confirm_password"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "ram0@gmail.com",
+                  "Mr",
+                  "Rama",
+                  "Krishna",
+                  "07833548910",
+                  "ramakrishan0",
+                  "ramakrishan0"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "ram1@gmail.com",
+                  "Mr",
+                  "Rama1",
+                  "Krishna1",
+                  "07833548911",
+                  "ramakrishan1",
+                  "ramakrishan1"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "ram2@gmail.com",
+                  "Mr",
+                  "Rama2",
+                  "Krishna2",
+                  "07833548912",
+                  "ramakrishan2",
+                  "ramakrishan2"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "ram3@gmail.com",
+                  "Mr",
+                  "Rama3",
+                  "Krishna3",
+                  "07833548913",
+                  "ramakrishan3",
+                  "ramakrishan3"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "ram4@gmail.com",
+                  "Mr",
+                  "Rama4",
+                  "Krishna4",
+                  "07833548914",
+                  "ramakrishan4",
+                  "ramakrishan4"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107611,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i should be able to register and login",
+            "match": {
+              "location": "RegisterStepdefs.i_should_be_able_to_register_and_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "As a end user\r\nI want to register providing all the required fields\r\nI should be able to register and log in",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "java/resources/register.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@register"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "i am on the home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7282345078,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTheBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "valid search",
+        "description": "",
+        "id": ";valid-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 883555980,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7488937,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i am on the home page",
+            "match": {
+              "location": "SearchStepDefs.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2451646629,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i search for  a product \"shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shirt",
+                  "offset": 25
+                }
+              ],
+              "location": "SearchStepDefs.iSearchForAProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44920783,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i should see all the relevant products",
+            "match": {
+              "location": "SearchStepDefs.i_should_see_all_the_relevant_products()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "As a end user\r\ni want to search for a product\r\nso that i can see all relevant products",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "java/resources/search.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@search"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "i am on home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8998723022,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTheBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "sort by price",
+        "description": "",
+        "id": ";sort-by-price;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 862848318,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7130236,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the home page",
+            "match": {
+              "location": "SortByPriceStepdefs.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2317977753,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for the product \"T-shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "T-shirt",
+                  "offset": 26
+                }
+              ],
+              "location": "SortByPriceStepdefs.iSearchForTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79943287,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should view all the relevant products",
+            "match": {
+              "location": "SortByPriceStepdefs.iShouldViewAllTheRelevantProducts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 572543837,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select the price range \"5     50\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5     50",
+                  "offset": 26
+                }
+              ],
+              "location": "SortByPriceStepdefs.iSelectThePriceRange(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36626,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see all the products within the selected price range",
+            "match": {
+              "location": "SortByPriceStepdefs.iShouldSeeAllTheProductsWithinTheSelectedPriceRange()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@sort"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "i am on home page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8124926372,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTheBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "sort by price",
+        "description": "",
+        "id": ";sort-by-price;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 965355455,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4692951,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am on the home page",
+            "match": {
+              "location": "SortByPriceStepdefs.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2219709716,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I search for the product \"jeans\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jeans",
+                  "offset": 26
+                }
+              ],
+              "location": "SortByPriceStepdefs.iSearchForTheProduct(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47472097,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should view all the relevant products",
+            "match": {
+              "location": "SortByPriceStepdefs.iShouldViewAllTheRelevantProducts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 222602740,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select the price range \"5    100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5    100",
+                  "offset": 26
+                }
+              ],
+              "location": "SortByPriceStepdefs.iSelectThePriceRange(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 276767,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see all the products within the selected price range",
+            "match": {
+              "location": "SortByPriceStepdefs.iShouldSeeAllTheProductsWithinTheSelectedPriceRange()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@sort"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "As a end user\r\nI want to sort the products by price range\r\nSo that i can view products in selected price range",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "java/resources/sortByPrice.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@sort"
+      }
+    ]
+  }
+]
